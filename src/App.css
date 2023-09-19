@@ -1,0 +1,117 @@
+main
+{
+  width: 100vw;
+  height: 65.5vw;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+}
+.containerCaballero1
+{
+  width: 25vw;
+  height: 65.5vw;
+  background-color: #e3e4e5;
+}
+.containerCaballero2
+{
+  width: 25vw;
+  height: 65.5vw;
+  background-color: #ff0080;
+}
+.containerCaballero3
+{
+  width: 25vw;
+  height: 65.5vw;
+  background-color: rgb(34, 199, 199);
+}
+.containerCaballero4
+{
+  width: 25vw;
+  height: 65.5vw;
+  background-color: rgb(60, 76, 218);
+}
+.cubo
+{
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 18vw;
+  height: 18vw;
+  background-color: red;
+  margin: auto;
+  top:40vw;
+  animation: girar 5s infinite linear;
+}
+img
+{
+  width: 18vw;
+  height: 18vw;
+}
+.cara1
+{
+  transform:translateZ(9vw)
+}
+.cara2
+{
+  position: relative;
+  bottom: 18.3vw ;
+  left: 9vw;
+  transform: rotateY(90deg);
+}
+.cara3
+{
+  position: relative;
+  bottom: 36.7vw ;
+  right: 9vw;
+  transform: rotateY(90deg);
+}
+.cara4
+{
+  position: relative;
+  bottom: 55vw ;
+  transform: translateZ(-9vw);
+}
+@keyframes girar {
+  0%{
+    transform: rotateY(0deg);
+  }
+  25%
+  {
+    transform: rotateY(90deg);
+  }
+  25%
+  {
+    transform: rotateY(90deg);
+  }
+  50%
+  {
+    transform: rotateY(180deg);
+  }
+  50%
+  {
+    transform: rotateY(180deg);
+  }
+  75%
+  {
+    transform: rotateY(270deg);
+  }
+  75%
+  {
+    transform: rotateY(270deg);
+  }
+  100%
+  {
+    transform: rotateY(360deg);
+  }
+}
+.caballero
+{
+  width: 15vw;
+  height: 15vw;
+  position: relative;
+  left: 5vw;
+  top: 23.5vw;
+  transition: 2s;
+}
